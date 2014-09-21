@@ -5,12 +5,15 @@ gruntjs 练习
 
 完成任务：使用gruntjs合并js文件并压缩
 
-//TODO 使用gruntjs合并并压缩css文件
+          使用gruntjs合并并压缩css文件
+
 //TODO 将静态html压缩
+
 //TODO 探究jshint,nodeunit如何使用
 
 如何运行：
 1.打开命令行并切换到gruntjs_train跟目录
+
 2.执行下面命令，安装依赖模块( --save-dev会自动将依赖配置加入package.json文件)
 
 npm install express   --save-dev

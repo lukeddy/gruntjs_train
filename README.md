@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/tzq668766/gruntjs_train.svg?branch=master)](https://travis-ci.org/tzq668766/gruntjs_train)
+
+
 gruntjs_train
 =============
 

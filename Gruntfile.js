@@ -5,7 +5,7 @@ module.exports = function(grunt) {
     //读取package.json的内容，形成个json数据
     pkg: grunt.file.readJSON('package.json'),
 
-    //合并文件任务
+    //js合并文件任务
     concat: {
       //文件头部输出信息
       options: {
@@ -14,11 +14,10 @@ module.exports = function(grunt) {
       dist: {
         src: 'src/js/*.js',
         dest: 'dist/js/app.js'
-        //dest: 'dist/js/<%= pkg.name %>.js'
       }
     },
 
-    //压缩文件任务
+    //js压缩文件任务
     uglify: {
       //文件头部输出信息
       options: {
@@ -26,18 +25,32 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {report: "gzip"},
-           //src: 'dist/js/<%= pkg.name %>.js',
            src: 'dist/js/app.js',
            dest: 'dist/js/app.min.js'
       }
+    },
+
+    //压缩CSS文件
+    cssmin:{
+       build:{
+         files:[{
+            expand:true, //是否分开压缩
+            //cwd:"css",
+            src:['src/css/*.css','!src/css/*.min.css'], //压缩文件夹css下除以.min.css结尾之外的所有的css文件
+            dest:'dist/',
+            ext:'.min.css',
+            //extDot:'last'
+         }]
+       }
     },
   });
 
   // 加载包含 "uglify","concat"的任务的插件。
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // 默认被执行的任务列表。
-  grunt.registerTask('default', ['concat', 'uglify']);
+  grunt.registerTask('default', ['concat', 'uglify','cssmin']);
 
 };

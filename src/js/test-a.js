@@ -1,0 +1,1 @@
+console.log("hello gruntjs,I am from test-a.js file");

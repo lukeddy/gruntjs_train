@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/tzq668766/gruntjs_train.svg?branch=master)](https://travis-ci.org/tzq668766/gruntjs_train)
+[![Build Status](https://travis-ci.org/tzq668766/gruntjs_train.svg?branch=master)](https://travis-ci.org/tzq668766/gruntjs_train)  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 
 gruntjs_train

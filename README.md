@@ -29,4 +29,5 @@ npm install grunt-contrib-nodeunit   --save-dev
 
 
 备注：如果依赖模块直接在package.json文件中写好了，执行npm install命令即可。
+
 3.运行：grunt

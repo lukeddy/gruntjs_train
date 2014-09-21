@@ -6,6 +6,8 @@ gruntjs 练习
 完成任务：使用gruntjs合并js文件并压缩
 
           使用gruntjs合并并压缩css文件
+          
+//添加trivis-ci持续集成
 
 //TODO 将静态html压缩
 
